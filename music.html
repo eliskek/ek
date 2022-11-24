@@ -1,0 +1,104 @@
+
+<!doctype html>
+<title>music</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  background-color: #171717;
+  background-image: url('bg1.gif');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main > left, 
+#main > right {
+  flex: 0 0 12.5vw;
+  padding: 0;
+}
+#main > left {
+  order: -1;
+  box-shadow: 1px 0 0 #000;
+}
+#main > right {
+  box-shadow: -1px 0 0 #000;
+}
+header, footer {
+  height: 10vh;
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header, footer, article, left, right {
+  padding: 1em;
+}
+img {
+  height: 30vh;
+}
+.icon {
+  height: 10vh;
+  padding: 1vh;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+</style>
+<body>
+  <header>
+    <b>elis knight's music</b>
+  </header>
+<div id="main">
+  <article>
+    <a href="https://striderrecs.bandcamp.com/album/walter-kronkite-and-the-half-baked-ames-room">
+      <img src="https://f4.bcbits.com/img/a2114377886_10.jpg">
+      <br>walter kronkite
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/roscoe-lee-browne">
+      <img src="https://f4.bcbits.com/img/a1336707057_10.jpg">
+      <br>roscoe lee browne
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/jesus-loves-men">
+      <img src="https://f4.bcbits.com/img/a2844335065_10.jpg">
+      <br>jesus loves men
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://striderrecs.bandcamp.com/">
+      <img src="https://f4.bcbits.com/img/0025672321_20.jpg">
+      <br>more on bandcamp
+    </a>
+  </article>
+</div>
+
+<footer>
+  <a href="music.html"><img class="icon" src="music.png"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="films.html"><img class="icon" src="films.png"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="art.html"><img class="icon" src="art.png"></a>
+</footer>
+
+
+
+</body> 
