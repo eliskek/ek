@@ -1,5 +1,4 @@
 <!doctype html>
-<html>
 <title>music</title>
 <style>
 * {
@@ -31,18 +30,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-#main > left, 
-#main > right {
-  flex: 0 0 12.5vw;
-  padding: 0;
-}
-#main > left {
-  order: -1;
-  box-shadow: 1px 0 0 #000;
-}
-#main > right {
-  box-shadow: -1px 0 0 #000;
-}
 header, footer {
   height: 10vh;
   text-align: center;
@@ -51,11 +38,14 @@ header, footer {
   justify-content: center;
   align-items: center;
 }
-header, footer, article, left, right {
+header, footer, article {
   padding: 1em;
 }
 img {
   height: 30vh;
+}
+.item:hover {
+  border: 2px solid white;
 }
 .icon {
   height: 10vh;
@@ -64,39 +54,80 @@ img {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
+.icon:hover {
+  filter: blur(3px);
+}
+.floating {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 </style>
 <body>
   <header>
-    <b>Elis Knight's Music</b>
+    <b>elis knight's music</b>
   </header>
-<div id="main">
+
+<div id="main" style="position: relative; overflow: hidden; overflow-y: scroll; background">
   <article>
-    <a href="https://striderrecs.bandcamp.com/album/walter-kronkite-and-the-half-baked-ames-room">
-      <img src="https://f4.bcbits.com/img/a2114377886_10.jpg">
-      <br>Walter Kronkite
+    <a href="https://striderrecs.bandcamp.com/album/walter-kronkite-and-the-half-baked-ames-room" style="position: absolute; left: 225px">
+      <img class="item" src="https://f4.bcbits.com/img/a2114377886_10.jpg">
+      <br>walter kronkite
     </a>
-    <a href="https://striderrecs.bandcamp.com/album/roscoe-lee-browne">
-      <img src="https://f4.bcbits.com/img/a1336707057_10.jpg">
-      <br>Roscoe Lee Browne
+    <a href="https://striderrecs.bandcamp.com/album/roscoe-lee-browne" style="position: absolute; left: 439px">
+      <img class="item" src="https://f4.bcbits.com/img/a1336707057_10.jpg">
+      <br>roscoe lee browne
     </a>
-    <a href="https://striderrecs.bandcamp.com/album/jesus-loves-men">
-      <img src="https://f4.bcbits.com/img/a2844335065_10.jpg">
-      <br>Jesus Loves Men
+    <a href="https://striderrecs.bandcamp.com/album/jesus-loves-men" style="position: absolute">
+      <img class="item" src="https://f4.bcbits.com/img/a2844335065_10.jpg">
+      <br>jesus loves men
     </a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://striderrecs.bandcamp.com/">
-      <img src="https://f4.bcbits.com/img/0025672321_20.jpg">
-      <br>More on BandCamp
+    <a href="https://striderrecs.bandcamp.com/album/grey-girl-with-arm" style="position: absolute; right: 439px">
+      <img class="item" src="https://f4.bcbits.com/img/a3332900949_10.jpg">
+      <br>grey girl with arm
     </a>
+    <a href="https://striderrecs.bandcamp.com/album/magic-lad-in-plain-selected-ambience" style="position: absolute; right: 225px">
+      <img class="item" src="https://f4.bcbits.com/img/a3930234818_10.jpg">
+      <br>magic lad in plain
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/dawgshit" style="position: absolute; left: 225px; top: 400px">
+      <img class="item" src="https://f4.bcbits.com/img/a1046431125_10.jpg">
+      <br>dawgshit
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/live-at-nigels-bed-breakfast" style="position: absolute; left: 439px; top: 400px">
+      <img class="item" src="https://f4.bcbits.com/img/a0112597889_10.jpg">
+      <br>live at nigel's b&b
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/fools-day" style="position: absolute; top: 400px">
+      <img class="item" src="https://f4.bcbits.com/img/a2289411559_10.jpg">
+      <br>fool's day
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/whats-on-tv" style="position: absolute; right: 439px; top: 400px">
+      <img class="item" src="https://f4.bcbits.com/img/a0861153834_10.jpg">
+      <br>what's on tv
+    </a>
+    <a href="https://striderrecs.bandcamp.com/album/lank" style="position: absolute; right: 225px; top: 400px">
+      <img class="item" src="https://f4.bcbits.com/img/a3880435863_10.jpg">
+      <br>lank
+    </a>
+    
   </article>
 </div>
 
 <footer>
-  <a href="music"><img class="icon" src="music.png"></a>
+  <a href="music.html"><img class="icon" src="music.png"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="ffilms"><img class="icon" src="films.png"></a>
+  <a href="films.html"><img class="icon" src="films.png"></a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="art"><img class="icon" src="art.png"></a>
+  <a href="art.html"><img class="icon" src="art.png"></a>
 </footer>
-</body>
-</html>
+
+<div class="floating">
+  <img src="img1.jpg" style="position: absolute; top: 47px; left: 15px;">
+  <img src="bg7.gif" style="position: absolute; bottom: 41px; right: 50px">
+  <img src="fl5.jpg" style="position: absolute; top: 30px; left: 920px;">
+  <img src="fl4.jpg" style="position: absolute; top: 324px; left: 45px;">
+</div>
+
+</body> 
